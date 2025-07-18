@@ -1,5 +1,5 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, inject } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { MODULE_LOADER } from './app.config';
 
 @Component({
@@ -10,11 +10,19 @@ import { MODULE_LOADER } from './app.config';
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppComponent {
-  loadRemoteModule = inject(MODULE_LOADER);
+  loader = inject(MODULE_LOADER);
+  router = inject(Router);
 
   constructor() {
-    this.loadRemoteModule('mfe1', './Component');
-    this.loadRemoteModule('mfe2', './Component');
+    this.loader.loadRemoteModule('mfe1', './Component');
+    this.loader.loadRemoteModule('mfe2', './Component');
+  }
+
+  showMfe3() {
+    this.router.navigate(['/mfe3']);
+  }
+  showMfe4() {
+    this.router.navigate(['/mfe4']);
   }
   title = 'vnf-host';
 }

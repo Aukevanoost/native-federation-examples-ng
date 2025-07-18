@@ -4,20 +4,17 @@ import {
   provideZoneChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { LoadRemoteModule, InitRemoteEntry } from 'vanilla-native-federation';
+import { LazyInitFederationResult } from 'vanilla-native-federation';
 import { routes } from './app.routes';
 
-export const MODULE_LOADER = new InjectionToken<LoadRemoteModule<unknown>>(
+export const MODULE_LOADER = new InjectionToken<LazyInitFederationResult>(
   'loader'
 );
 
-export const appConfig = (
-  loader: LoadRemoteModule<unknown>,
-  init: InitRemoteEntry
-): ApplicationConfig => ({
+export const appConfig = (nf: LazyInitFederationResult): ApplicationConfig => ({
   providers: [
-    { provide: MODULE_LOADER, useValue: loader },
+    { provide: MODULE_LOADER, useValue: nf },
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes(init)),
+    provideRouter(routes(nf.initRemoteEntry)),
   ],
 });

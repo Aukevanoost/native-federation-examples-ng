@@ -18,10 +18,8 @@ initFederation(manifest, {
   hostRemoteEntry: './remoteEntry.json',
   logLevel: 'debug',
 })
-  .then((r: LazyInitFederationResult) => {
-    console.log(r.config);
-    return import('./bootstrap').then((m: any) =>
-      m.bootstrap(r.loadRemoteModule, r.initRemoteEntry)
-    );
+  .then((nf: LazyInitFederationResult) => {
+    console.log(nf.config);
+    return import('./bootstrap').then((m: any) => m.bootstrap(nf));
   })
   .catch((err) => console.error(err));

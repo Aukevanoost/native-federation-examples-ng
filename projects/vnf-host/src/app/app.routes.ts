@@ -14,4 +14,11 @@ export const routes = (initRemoteEntry: InitRemoteEntry): Routes => [
         )
         .then((m) => m.AppComponent),
   },
+  {
+    path: 'mfe4',
+    loadComponent: () =>
+      import('./loading-shell/loading-shell.component').then(
+        (m) => m.LoadingShellComponent
+      ),
+  },
 ];
