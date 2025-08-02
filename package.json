@@ -10,7 +10,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-architects/native-federation": "^20.0.0",
+    "@angular-architects/native-federation": "^20.1.2",
     "@angular/animations": "^20.1.0",
     "@angular/common": "^20.1.0",
     "@angular/compiler": "^20.1.0",
@@ -20,11 +20,10 @@
     "@angular/platform-browser": "^20.1.0",
     "@angular/platform-browser-dynamic": "^20.1.0",
     "@angular/router": "^20.1.0",
-    "@softarc/native-federation-node": "^2.0.10",
     "es-module-shims": "^1.5.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "vanilla-native-federation": "^0.16.0",
+    "vanilla-native-federation": "^0.17.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {

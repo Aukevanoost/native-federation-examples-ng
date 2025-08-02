@@ -9,10 +9,10 @@ import { MODULE_LOADER } from '../app.config';
 })
 export class LoadingShellComponent {
   loader = inject(MODULE_LOADER);
+
   constructor() {
-    console.log('Loading Shell Component initialized');
     this.loader
-      .initRemoteEntry('http://localhost:4204/remoteEntry.json', 'mfe4')
+      .initRemoteEntry(`http://localhost:4204/remoteEntry.json`, 'mfe4')
       .then((e) => e.loadRemoteModule('mfe4', './Bootstrap'));
   }
 }

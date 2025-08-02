@@ -5,6 +5,7 @@ import {
 import {
   useShimImportMap,
   consoleLogger,
+  sessionStorageEntry,
 } from 'vanilla-native-federation/options';
 
 const manifest = {
@@ -15,8 +16,13 @@ const manifest = {
 initFederation(manifest, {
   ...useShimImportMap({ shimMode: true }),
   logger: consoleLogger,
+  storage: sessionStorageEntry,
   hostRemoteEntry: './remoteEntry.json',
   logLevel: 'debug',
+  profile: {
+    latestSharedExternal: false,
+    skipCachedRemotesIfURLMatches: false,
+  },
 })
   .then((nf: LazyInitFederationResult) => {
     console.log(nf.config);
