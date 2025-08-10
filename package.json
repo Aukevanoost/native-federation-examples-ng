@@ -23,7 +23,7 @@
     "es-module-shims": "^1.5.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "vanilla-native-federation": "^0.17.0",
+    "vanilla-native-federation": "^0.18.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
