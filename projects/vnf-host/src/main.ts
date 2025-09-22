@@ -1,6 +1,6 @@
 import {
   initFederation,
-  LazyInitFederationResult,
+  NativeFederationResult,
 } from 'vanilla-native-federation';
 import {
   useShimImportMap,
@@ -21,10 +21,10 @@ initFederation(manifest, {
   logLevel: 'debug',
   profile: {
     latestSharedExternal: false,
-    skipCachedRemotesIfURLMatches: false,
+    overrideCachedRemotesIfURLMatches: true,
   },
 })
-  .then((nf: LazyInitFederationResult) => {
+  .then((nf: NativeFederationResult) => {
     console.log(nf.config);
     return import('./bootstrap').then((m: any) => m.bootstrap(nf));
   })

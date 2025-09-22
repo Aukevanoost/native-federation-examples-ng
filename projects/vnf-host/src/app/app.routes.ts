@@ -1,8 +1,8 @@
 import { Type } from '@angular/core';
 import { Routes } from '@angular/router';
-import { InitRemoteEntry } from 'vanilla-native-federation';
+import { NativeFederationResult } from 'vanilla-native-federation';
 
-export const routes = (initRemoteEntry: InitRemoteEntry): Routes => [
+export const routes = ({ initRemoteEntry }: NativeFederationResult): Routes => [
   {
     path: 'mfe3',
     loadComponent: () =>
