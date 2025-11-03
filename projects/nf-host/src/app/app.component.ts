@@ -7,13 +7,12 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppComponent {
   title = 'nf-host';
   constructor() {
-    loadRemoteModule("mfe1", "./Component");
-    loadRemoteModule("mfe2", "./Component");
-
+    loadRemoteModule('mfe1', './Component');
+    loadRemoteModule('mfe2', './Component');
   }
 }

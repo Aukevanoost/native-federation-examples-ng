@@ -7,7 +7,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 To start a local development server, run:
 
 ```bash
-npm install
+npm ci
 npm run start
 ```
 
@@ -15,7 +15,7 @@ For the cross-angular test, run the ng19 workspace in another terminal
 
 ```bash
 cd ng19
-npm install
+npm ci
 npm run start
 ```
 

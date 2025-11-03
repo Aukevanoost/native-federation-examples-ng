@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"ng serve mfe1\" \"ng serve mfe2\" \"ng serve mfe3\" \"ng serve vnf-host\"",
+    "start": "concurrently \"ng serve mfe1\" \"ng serve mfe2\" \"ng serve mfe3\" \"ng serve nf-host\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
