@@ -1,7 +1,7 @@
 import {
   ApplicationConfig,
   InjectionToken,
-  provideZoneChangeDetection,
+  provideZonelessChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { NativeFederationResult } from 'vanilla-native-federation';
@@ -14,7 +14,7 @@ export const MODULE_LOADER = new InjectionToken<NativeFederationResult>(
 export const appConfig = (nf: NativeFederationResult): ApplicationConfig => ({
   providers: [
     { provide: MODULE_LOADER, useValue: nf },
-    provideZoneChangeDetection({ eventCoalescing: true }),
+    provideZonelessChangeDetection(),
     provideRouter(routes(nf)),
   ],
 });
