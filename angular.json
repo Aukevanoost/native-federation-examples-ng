@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
-                        "cacheExternalArtifacts": true
+                        "cacheExternalArtifacts": false
                     },
 					"configurations": {
 						"production": {
@@ -34,7 +34,7 @@
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
 						"target": "mfe1:serve-original:development",
-						"cacheExternalArtifacts": true,
+						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -66,7 +66,7 @@
 					"builder": "@angular/build:application",
 					"options": {
 						"outputPath": "dist/mfe1",
-						"verbose": false,
+						"verbose": true,
 						"index": "projects/mfe1/src/index.html",
 						"browser": "projects/mfe1/src/main.ts",
 						"polyfills": [
@@ -140,7 +140,7 @@
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
-                        "cacheExternalArtifacts": true
+                        "cacheExternalArtifacts": false
                     },
 					"configurations": {
 						"production": {
@@ -157,7 +157,7 @@
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
 						"target": "mfe2:serve-original:development",
-						"cacheExternalArtifacts": true,
+						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -263,7 +263,7 @@
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
-                        "cacheExternalArtifacts": true
+                        "cacheExternalArtifacts": false
                     },
 					"configurations": {
 						"production": {
@@ -280,7 +280,7 @@
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
 						"target": "nf-host:serve-original:development",
-						"cacheExternalArtifacts": true,
+						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -386,7 +386,7 @@
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
-                        "cacheExternalArtifacts": true
+                        "cacheExternalArtifacts": false
                     },
 					"configurations": {
 						"production": {
@@ -403,7 +403,7 @@
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
 						"target": "vnf-host:serve-original:development",
-						"cacheExternalArtifacts": true,
+						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -509,7 +509,7 @@
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
-                        "cacheExternalArtifacts": true
+                        "cacheExternalArtifacts": false
                     },
 					"configurations": {
 						"production": {
@@ -526,7 +526,7 @@
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
 						"target": "mfe3:serve-original:development",
-						"cacheExternalArtifacts": true,
+						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
