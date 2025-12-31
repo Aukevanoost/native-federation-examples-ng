@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { of } from 'rxjs/internal/observable/of';
 
 @Component({
   selector: 'app-mfe1',
@@ -9,4 +10,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = signal('mfe1');
+  test = of("test");
 }
