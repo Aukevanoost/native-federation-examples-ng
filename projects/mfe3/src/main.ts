@@ -1,4 +1,4 @@
-import { initFederation } from '@angular-architects/native-federation';
+import { initFederation } from '@nf-beta/angular';
 
 initFederation()
   .catch((err) => console.error(err))

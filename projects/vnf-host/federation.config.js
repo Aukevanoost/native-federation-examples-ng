@@ -1,7 +1,6 @@
-const { withNativeFederation, shareAll } = require('@angular-architects/native-federation/config');
+import {withNativeFederation, shareAll} from '@nf-beta/angular/config';
 
-module.exports = withNativeFederation({
-
+export default withNativeFederation({
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },

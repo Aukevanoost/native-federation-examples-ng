@@ -1,6 +1,7 @@
 {
   "name": "mfe-test",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"ng serve mfe1\" \"ng serve mfe2\" \"ng serve mfe3\" \"ng serve nf-host\"",
@@ -10,7 +11,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-architects/native-federation": "^21.0.4",
     "@angular/animations": "^21.0.6",
     "@angular/common": "^21.0.6",
     "@angular/compiler": "^21.0.6",
@@ -23,12 +23,13 @@
     "es-module-shims": "^1.5.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "vanilla-native-federation": "^1.1.0",
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular/build": "^21.0.4",
+    "@nf-beta/angular": "^0.0.3",
+    "vanilla-native-federation": "^1.1.0",
     "@angular-devkit/build-angular": "^21.0.4",
+    "@angular/build": "^21.0.4",
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^21.0.6",
     "@types/jasmine": "~5.1.0",

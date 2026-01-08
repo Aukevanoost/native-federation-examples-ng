@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { loadRemoteModule } from '@angular-architects/native-federation';
+import { loadRemoteModule } from '@nf-beta/angular';
 
 export const routes = (): Routes => [
   {

@@ -15,7 +15,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
                         "cacheExternalArtifacts": false
                     },
@@ -31,7 +31,7 @@
 					"defaultConfiguration": "production"
 				},
 				"serve": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
 						"target": "mfe1:serve-original:development",
 						"cacheExternalArtifacts": false,
@@ -138,7 +138,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
                         "cacheExternalArtifacts": false
                     },
@@ -154,7 +154,7 @@
 					"defaultConfiguration": "production"
 				},
 				"serve": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
 						"target": "mfe2:serve-original:development",
 						"cacheExternalArtifacts": false,
@@ -261,7 +261,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
                         "cacheExternalArtifacts": false
                     },
@@ -277,7 +277,7 @@
 					"defaultConfiguration": "production"
 				},
 				"serve": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
 						"target": "nf-host:serve-original:development",
 						"cacheExternalArtifacts": false,
@@ -384,7 +384,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
                         "cacheExternalArtifacts": false
                     },
@@ -400,7 +400,7 @@
 					"defaultConfiguration": "production"
 				},
 				"serve": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
 						"target": "vnf-host:serve-original:development",
 						"cacheExternalArtifacts": false,
@@ -507,7 +507,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
                         "cacheExternalArtifacts": false
                     },
@@ -523,7 +523,7 @@
 					"defaultConfiguration": "production"
 				},
 				"serve": {
-					"builder": "@angular-architects/native-federation:build",
+					"builder": "@nf-beta/angular:build",
 					"options": {
 						"target": "mfe3:serve-original:development",
 						"cacheExternalArtifacts": false,
