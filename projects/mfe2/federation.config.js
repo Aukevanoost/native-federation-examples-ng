@@ -17,7 +17,6 @@ export default withNativeFederation({
     'rxjs/fetch',
     'rxjs/testing',
     'rxjs/webSocket',
-    (pkg) => pkg.startsWith('vanilla-native-federation'),
     // Add further packages you don't need at runtime
   ]
 

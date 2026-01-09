@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "ng": "ng",
-    "start": "concurrently \"ng serve mfe1\" \"ng serve mfe2\" \"ng serve mfe3\" \"ng serve nf-host\"",
+    "start": "concurrently \"ng serve mfe1\" \"ng serve mfe2\" \"ng serve mfe3\" \"ng serve vnf-host\"",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -26,12 +26,12 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@nf-beta/angular": "^0.0.3",
-    "vanilla-native-federation": "^1.1.0",
     "@angular-devkit/build-angular": "^21.0.4",
     "@angular/build": "^21.0.4",
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^21.0.6",
+    "@nf-beta/angular": "^0.0.3",
+    "@nf-beta/orchestrator": "^0.0.1",
     "@types/jasmine": "~5.1.0",
     "concurrently": "^9.2.0",
     "jasmine-core": "~5.6.0",

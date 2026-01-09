@@ -4,7 +4,7 @@ import {
   provideZonelessChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { NativeFederationResult } from 'vanilla-native-federation';
+import { NativeFederationResult } from '@nf-beta/orchestrator';
 import { routes } from './app.routes';
 
 export const MODULE_LOADER = new InjectionToken<NativeFederationResult>(

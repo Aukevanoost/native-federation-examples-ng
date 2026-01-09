@@ -1,6 +1,6 @@
 import { Type } from '@angular/core';
 import { Routes } from '@angular/router';
-import { NativeFederationResult } from 'vanilla-native-federation';
+import { NativeFederationResult } from '@nf-beta/orchestrator';
 
 export const routes = ({ initRemoteEntry }: NativeFederationResult): Routes => [
   {

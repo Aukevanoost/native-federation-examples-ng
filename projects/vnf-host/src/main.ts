@@ -1,12 +1,9 @@
-import {
-  initFederation,
-  NativeFederationResult,
-} from 'vanilla-native-federation';
+import { initFederation, NativeFederationResult } from '@nf-beta/orchestrator';
 import {
   useShimImportMap,
   consoleLogger,
   sessionStorageEntry,
-} from 'vanilla-native-federation/options';
+} from '@nf-beta/orchestrator/options';
 
 const manifest = {
   mfe1: 'http://localhost:4201/remoteEntry.json',
