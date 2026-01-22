@@ -4,11 +4,11 @@ import {
   provideZonelessChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { NativeFederationResult } from '@nf-beta/orchestrator';
+import { NativeFederationResult } from '@softarc/native-federation-orchestrator';
 import { routes } from './app.routes';
 
 export const MODULE_LOADER = new InjectionToken<NativeFederationResult>(
-  'loader'
+  'loader',
 );
 
 export const appConfig = (nf: NativeFederationResult): ApplicationConfig => ({

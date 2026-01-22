@@ -1,6 +1,6 @@
 import { Type } from '@angular/core';
 import { Routes } from '@angular/router';
-import { NativeFederationResult } from '@nf-beta/orchestrator';
+import { NativeFederationResult } from '@softarc/native-federation-orchestrator';
 
 export const routes = ({ initRemoteEntry }: NativeFederationResult): Routes => [
   {
@@ -10,7 +10,7 @@ export const routes = ({ initRemoteEntry }: NativeFederationResult): Routes => [
         .then((nf) =>
           nf
             .as<{ AppComponent: Type<unknown> }>()
-            .loadRemoteModule('mfe3', './Component')
+            .loadRemoteModule('mfe3', './Component'),
         )
         .then((m) => m.AppComponent),
   },
@@ -18,7 +18,7 @@ export const routes = ({ initRemoteEntry }: NativeFederationResult): Routes => [
     path: 'mfe4',
     loadComponent: () =>
       import('./loading-shell/loading-shell.component').then(
-        (m) => m.LoadingShellComponent
+        (m) => m.LoadingShellComponent,
       ),
   },
 ];
