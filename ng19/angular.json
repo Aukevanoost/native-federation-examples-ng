@@ -15,7 +15,7 @@
 			"prefix": "app",
 			"architect": {
 				"build": {
-					"builder": "@nf-beta/angular:build",
+					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {},
 					"configurations": {
 						"production": {
@@ -29,7 +29,7 @@
 					"defaultConfiguration": "production"
 				},
 				"serve": {
-					"builder": "@nf-beta/angular:build",
+					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
 						"target": "mfe4:serve-original:development",
 						"rebuildDelay": 0,

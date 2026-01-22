@@ -1,4 +1,4 @@
-import { loadRemoteModule } from '@nf-beta/angular';
+import { loadRemoteModule } from '@angular-architects/native-federation-v4';
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
