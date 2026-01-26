@@ -13,6 +13,10 @@ export class LoadingShellComponent {
   constructor() {
     this.loader
       .initRemoteEntry(`http://localhost:4204/remoteEntry.json`, 'mfe4')
-      .then((e) => e.loadRemoteModule('mfe4', './Bootstrap'));
+      .then((e) =>
+        e
+          .loadRemoteModule('mfe4', './Bootstrap')
+          .then((m: any) => m.bootstrap(e.loadRemoteModule)),
+      );
   }
 }

@@ -3,11 +3,11 @@ import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import { createCustomElement } from '@angular/elements';
 
-(() => {
-  createApplication(appConfig).then(({ injector }) => {
+export async function bootstrap(loadRemoteModule: any): Promise<void> {
+  await createApplication(appConfig).then(({ injector }) => {
     customElements.define(
       'app-mfe4',
-      createCustomElement(AppComponent, { injector })
+      createCustomElement(AppComponent, { injector }),
     );
   });
-})();
+}

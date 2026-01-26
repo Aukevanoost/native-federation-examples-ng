@@ -1,6 +1,9 @@
-import { initFederation } from '@angular-architects/native-federation';
+import {
+  initFederation,
+  loadRemoteModule,
+} from '@angular-architects/native-federation';
 
 initFederation()
-  .catch(err => console.error(err))
-  .then(_ => import('./bootstrap'))
-  .catch(err => console.error(err));
+  .catch((err) => console.error(err))
+  .then(() => import('./bootstrap').then((m) => m.bootstrap()))
+  .catch((err) => console.error(err));

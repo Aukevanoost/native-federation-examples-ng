@@ -14,8 +14,13 @@ export class AppComponent {
   router = inject(Router);
 
   constructor() {
-    this.loader.loadRemoteModule('mfe1', './Component');
-    this.loader.loadRemoteModule('mfe2', './Component');
+    this.loader.loadRemoteModule('mfe1', './Component').then((m: any) => {
+      console.log(m);
+      return m.bootstrap();
+    });
+    this.loader
+      .loadRemoteModule('mfe2', './Component')
+      .then((m: any) => m.bootstrap());
   }
 
   showMfe3() {
