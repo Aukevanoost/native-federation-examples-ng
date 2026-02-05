@@ -5,18 +5,18 @@ import {
 import {
   useShimImportMap,
   consoleLogger,
-  sessionStorageEntry,
+  globalThisStorageEntry,
 } from '@softarc/native-federation-orchestrator/options';
 
 const manifest = {
-  mfe1: 'http://localhost:4201/remoteEntry.json',
+  'team/mfe1': 'http://localhost:4201/remoteEntry.json',
   mfe2: 'http://localhost:4202/remoteEntry.json',
 };
 
 initFederation(manifest, {
   ...useShimImportMap({ shimMode: true }),
   logger: consoleLogger,
-  storage: sessionStorageEntry,
+  storage: globalThisStorageEntry,
   hostRemoteEntry: './remoteEntry.json',
   logLevel: 'debug',
   profile: {

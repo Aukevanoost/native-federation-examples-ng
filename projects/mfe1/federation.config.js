@@ -1,13 +1,12 @@
-import {withNativeFederation, shareAll} from '@angular-architects/native-federation-v4/config';
+import {withNativeFederation, shareAll} from '@softarc/native-federation/config';
 
 export default withNativeFederation({
 
-  name: 'mfe1',
+  name: 'team/mfe1',
 
   exposes: {
     './Component': './projects/mfe1/src/bootstrap.ts',
   },
-
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
   },

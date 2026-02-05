@@ -17,7 +17,8 @@
 				"build": {
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
-                        "cacheExternalArtifacts": false
+                        "cacheExternalArtifacts": false,
+						"chunks": { "enable": true, "dense": true }
                     },
 					"configurations": {
 						"production": {
@@ -36,6 +37,7 @@
 						"target": "mfe1:serve-original:development",
 						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
+						"chunks": { "enable": true, "dense": true },
 						"dev": true,
 						"port": 0
 					}
@@ -140,7 +142,8 @@
 				"build": {
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
-                        "cacheExternalArtifacts": false
+                        "cacheExternalArtifacts": false,
+						"chunks": { "enable": true, "dense": true }
                     },
 					"configurations": {
 						"production": {
@@ -158,6 +161,7 @@
 					"options": {
 						"target": "mfe2:serve-original:development",
 						"cacheExternalArtifacts": false,
+						"chunks": { "enable": true, "dense": true },
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -404,6 +408,7 @@
 					"options": {
 						"target": "vnf-host:serve-original:development",
 						"cacheExternalArtifacts": false,
+						"chunks": { "enable": true, "dense": true },
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -527,6 +532,7 @@
 					"options": {
 						"target": "mfe3:serve-original:development",
 						"cacheExternalArtifacts": false,
+						"chunks": { "enable": true, "dense": true },
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
