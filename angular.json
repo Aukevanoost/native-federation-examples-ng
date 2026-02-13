@@ -18,7 +18,7 @@
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
                         "cacheExternalArtifacts": false,
-						"chunks": { "enable": true, "dense": true }
+						"chunks": { "enable": false, "dense": true }
                     },
 					"configurations": {
 						"production": {
@@ -37,7 +37,7 @@
 						"target": "mfe1:serve-original:development",
 						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
-						"chunks": { "enable": true, "dense": true },
+						"chunks": { "enable": false, "dense": true },
 						"dev": true,
 						"port": 0
 					}
