@@ -14,7 +14,7 @@ npm run start
 For the cross-angular test, run the ng19 workspace in another terminal
 
 ```bash
-cd ng19
+cd ng20
 npm ci
 npm run start
 ```
