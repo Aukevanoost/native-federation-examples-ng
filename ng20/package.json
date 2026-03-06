@@ -25,9 +25,9 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular-architects/native-federation-v4": "^20.3.6",
-    "@softarc/native-federation": "4.0.0-RC6",
-    "@softarc/native-federation-runtime": "4.0.0-RC6",
+    "@angular-architects/native-federation-v4": "^20.3.7",
+    "@softarc/native-federation": "4.0.0-RC8",
+    "@softarc/native-federation-runtime": "4.0.0-RC8",
     "@softarc/native-federation-orchestrator": "4.0.0-RC4",
     "@angular/build": "^20.3.0",
     "@angular-devkit/build-angular": "^20.3.0",

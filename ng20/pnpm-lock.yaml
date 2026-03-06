@@ -46,8 +46,8 @@ importers:
         version: 2.8.1
     devDependencies:
       '@angular-architects/native-federation-v4':
-        specifier: ^20.3.6
-        version: 20.3.6(@angular/compiler-cli@20.3.16(@angular/compiler@20.3.16)(typescript@5.8.3))(@angular/compiler@20.3.16)(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(@angular/platform-browser@20.3.16(@angular/animations@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@types/node@25.2.0)(chokidar@4.0.3)(jiti@1.21.7)(karma@6.4.4)(less@4.4.0)(postcss@8.5.6)(terser@5.43.1)(tslib@2.8.1)(typescript@5.8.3)
+        specifier: ^20.3.7
+        version: 20.3.7(@angular/compiler-cli@20.3.16(@angular/compiler@20.3.16)(typescript@5.8.3))(@angular/compiler@20.3.16)(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(@angular/platform-browser@20.3.16(@angular/animations@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@types/node@25.2.0)(chokidar@4.0.3)(jiti@1.21.7)(karma@6.4.4)(less@4.4.0)(postcss@8.5.6)(terser@5.43.1)(tslib@2.8.1)(typescript@5.8.3)
       '@angular-devkit/build-angular':
         specifier: ^20.3.0
         version: 20.3.15(@angular/compiler-cli@20.3.16(@angular/compiler@20.3.16)(typescript@5.8.3))(@angular/compiler@20.3.16)(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(@angular/platform-browser@20.3.16(@angular/animations@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@types/node@25.2.0)(chokidar@4.0.3)(jiti@1.21.7)(karma@6.4.4)(typescript@5.8.3)
@@ -61,14 +61,14 @@ importers:
         specifier: ^20.3.0
         version: 20.3.16(@angular/compiler@20.3.16)(typescript@5.8.3)
       '@softarc/native-federation':
-        specifier: 4.0.0-RC6
-        version: 4.0.0-RC6(typescript@5.8.3)
+        specifier: 4.0.0-RC8
+        version: 4.0.0-RC8(typescript@5.8.3)
       '@softarc/native-federation-orchestrator':
         specifier: 4.0.0-RC4
         version: 4.0.0-RC4
       '@softarc/native-federation-runtime':
-        specifier: 4.0.0-RC6
-        version: 4.0.0-RC6(typescript@5.8.3)
+        specifier: 4.0.0-RC8
+        version: 4.0.0-RC8(typescript@5.8.3)
       '@types/jasmine':
         specifier: ~5.1.0
         version: 5.1.15
@@ -159,8 +159,8 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@angular-architects/native-federation-v4@20.3.6':
-    resolution: {integrity: sha512-e2D4LNCXZr2Wu7F9E2jEfq/mDwEAAJaPZ9IhQSmMNcaZ95IofNhIpy/YGYgDfbGsYC8EtsU+t75XOSRuCuoWGA==}
+  '@angular-architects/native-federation-v4@20.3.7':
+    resolution: {integrity: sha512-skXPLIbA9I/SzS5Dza2c5TFfa4izXmTjx2scrLxFHeAOGsQ6y0jZxTlcWpnuEXgSIOizJ5GG1CspuLDTS6T2HQ==}
 
   '@angular-devkit/architect@0.2003.15':
     resolution: {integrity: sha512-HmGnUTLVwpvOFilc3gTP6CL9o+UbkVyu9S4WENkQbInbW3zp54lkzY71uWJIP7QvuXPa+bS4WHEmoGNQtNvv1A==}
@@ -2160,11 +2160,11 @@ packages:
   '@softarc/native-federation-orchestrator@4.0.0-RC4':
     resolution: {integrity: sha512-127S2rwAmjmhl1eY5jo45QKtvn0GnQ7Swwb3QPNyseNRbrvwArTGKIvPvQGlOlpz7HqM4x/us58C4ruVdCAAcg==}
 
-  '@softarc/native-federation-runtime@4.0.0-RC6':
-    resolution: {integrity: sha512-NwV7x2QCxYiCqkHmqV1SBdppyYm1szUf62Lywy9SI0EernqWszbtDNiyoqh6XuWmx/LMUcuVMr3/vG0WKBjdKA==}
+  '@softarc/native-federation-runtime@4.0.0-RC8':
+    resolution: {integrity: sha512-mCBA8IfBZH2Q0Tl4qtKt9gII52Co8vApCCv+h0oLW+DSP1ZFDyO0409FL+byurDJp3t9L42LQg9J0PeMNJKknw==}
 
-  '@softarc/native-federation@4.0.0-RC6':
-    resolution: {integrity: sha512-JVitS9pPkDVdI6t6XhhbtkEFNHw4UvjTiVokTNMvHxA/O+IbSBf/+/HwgX34x2lphC5q3O0jzzlu4+HFPKLxug==}
+  '@softarc/native-federation@4.0.0-RC8':
+    resolution: {integrity: sha512-AkBb9mOfW/m0bMIZ9T2cNbQdgfWTz3zkQWb0IdYYDI9hZiXrRISzZCMDP+dO1irTogDpDAdb1Z3pbuoW6JccbA==}
 
   '@softarc/sheriff-core@0.19.6':
     resolution: {integrity: sha512-KACxHG9sS7kNWgnnBODzdr14kMLMrJVlQKc+tViUP03p2fRwNhESOA49bz51Yn7dro1mbtMmmFjICLmZSJDZZA==}
@@ -4919,7 +4919,7 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.13
       '@jridgewell/trace-mapping': 0.3.31
 
-  '@angular-architects/native-federation-v4@20.3.6(@angular/compiler-cli@20.3.16(@angular/compiler@20.3.16)(typescript@5.8.3))(@angular/compiler@20.3.16)(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(@angular/platform-browser@20.3.16(@angular/animations@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@types/node@25.2.0)(chokidar@4.0.3)(jiti@1.21.7)(karma@6.4.4)(less@4.4.0)(postcss@8.5.6)(terser@5.43.1)(tslib@2.8.1)(typescript@5.8.3)':
+  '@angular-architects/native-federation-v4@20.3.7(@angular/compiler-cli@20.3.16(@angular/compiler@20.3.16)(typescript@5.8.3))(@angular/compiler@20.3.16)(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(@angular/platform-browser@20.3.16(@angular/animations@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@types/node@25.2.0)(chokidar@4.0.3)(jiti@1.21.7)(karma@6.4.4)(less@4.4.0)(postcss@8.5.6)(terser@5.43.1)(tslib@2.8.1)(typescript@5.8.3)':
     dependencies:
       '@angular-devkit/architect': 0.2003.15(chokidar@4.0.3)
       '@angular-devkit/build-angular': 20.3.15(@angular/compiler-cli@20.3.16(@angular/compiler@20.3.16)(typescript@5.8.3))(@angular/compiler@20.3.16)(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(@angular/platform-browser@20.3.16(@angular/animations@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@types/node@25.2.0)(chokidar@4.0.3)(jiti@1.21.7)(karma@6.4.4)(typescript@5.8.3)
@@ -4927,8 +4927,8 @@ snapshots:
       '@angular-devkit/schematics': 20.3.15(chokidar@4.0.3)
       '@angular/build': 20.3.15(@angular/compiler-cli@20.3.16(@angular/compiler@20.3.16)(typescript@5.8.3))(@angular/compiler@20.3.16)(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(@angular/platform-browser@20.3.16(@angular/animations@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@angular/common@20.3.16(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@20.3.16(@angular/compiler@20.3.16)(rxjs@7.8.2)))(@types/node@25.2.0)(chokidar@4.0.3)(jiti@1.21.7)(karma@6.4.4)(less@4.4.0)(postcss@8.5.6)(terser@5.43.1)(tslib@2.8.1)(typescript@5.8.3)
       '@chialab/esbuild-plugin-commonjs': 0.19.0
-      '@softarc/native-federation': 4.0.0-RC6(typescript@5.8.3)
-      '@softarc/native-federation-runtime': 4.0.0-RC6(typescript@5.8.3)
+      '@softarc/native-federation': 4.0.0-RC8(typescript@5.8.3)
+      '@softarc/native-federation-runtime': 4.0.0-RC8(typescript@5.8.3)
     transitivePeerDependencies:
       - '@angular/compiler'
       - '@angular/compiler-cli'
@@ -6916,13 +6916,13 @@ snapshots:
     dependencies:
       semver: 7.7.3
 
-  '@softarc/native-federation-runtime@4.0.0-RC6(typescript@5.8.3)':
+  '@softarc/native-federation-runtime@4.0.0-RC8(typescript@5.8.3)':
     dependencies:
-      '@softarc/native-federation': 4.0.0-RC6(typescript@5.8.3)
+      '@softarc/native-federation': 4.0.0-RC8(typescript@5.8.3)
     transitivePeerDependencies:
       - typescript
 
-  '@softarc/native-federation@4.0.0-RC6(typescript@5.8.3)':
+  '@softarc/native-federation@4.0.0-RC8(typescript@5.8.3)':
     dependencies:
       '@softarc/sheriff-core': 0.19.6(typescript@5.8.3)
       chalk: 5.6.2
