@@ -5,8 +5,7 @@ export default withNativeFederation({
   name: 'team/mfe1',
 
   exposes: {
-    './Bootstrap': './projects/mfe1/src/bootstrap.ts',
-    './Component': './projects/mfe1/src/app/app.component.ts',
+    './Component': './projects/mfe1/src/bootstrap.ts',
   },
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package' }),

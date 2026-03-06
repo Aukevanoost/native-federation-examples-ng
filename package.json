@@ -27,7 +27,7 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-architects/native-federation-v4": "~21.1.6",
+    "@angular-architects/native-federation-v4": "~21.1.7",
     "@softarc/native-federation": "4.0.0-RC8",
     "@softarc/native-federation-runtime": "4.0.0-RC8",
     "@softarc/native-federation-orchestrator": "4.0.0-RC4",
