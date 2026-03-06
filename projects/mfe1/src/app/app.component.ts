@@ -8,5 +8,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = signal('mfe1');
+  title = signal('mfe150');
 }

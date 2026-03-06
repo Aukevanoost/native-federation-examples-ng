@@ -18,7 +18,8 @@
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
                         "cacheExternalArtifacts": false,
-						"chunks": { "enable": false, "dense": true }
+						"chunks": { "enable": false, "dense": true },
+						"entryPoint": "projects/mfe1/src/main.ts"
                     },
 					"configurations": {
 						"production": {

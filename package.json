@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@angular-architects/native-federation-v4": "~21.1.6",
-    "@softarc/native-federation": "4.0.0-RC6",
-    "@softarc/native-federation-runtime": "4.0.0-RC6",
+    "@softarc/native-federation": "4.0.0-RC8",
+    "@softarc/native-federation-runtime": "4.0.0-RC8",
     "@softarc/native-federation-orchestrator": "4.0.0-RC4",
     "@angular-devkit/build-angular": "^21.2.0",
     "@angular/build": "^21.2.0",

@@ -64,14 +64,14 @@ importers:
         specifier: ^21.2.0
         version: 21.2.0(@angular/compiler@21.2.0)(typescript@5.9.3)
       '@softarc/native-federation':
-        specifier: 4.0.0-RC6
-        version: 4.0.0-RC6(typescript@5.9.3)
+        specifier: 4.0.0-RC8
+        version: 4.0.0-RC8(typescript@5.9.3)
       '@softarc/native-federation-orchestrator':
         specifier: 4.0.0-RC4
         version: 4.0.0-RC4
       '@softarc/native-federation-runtime':
-        specifier: 4.0.0-RC6
-        version: 4.0.0-RC6(typescript@5.9.3)
+        specifier: 4.0.0-RC8
+        version: 4.0.0-RC8(typescript@5.9.3)
       '@types/jasmine':
         specifier: ~5.1.0
         version: 5.1.15
@@ -2147,8 +2147,14 @@ packages:
   '@softarc/native-federation-runtime@4.0.0-RC6':
     resolution: {integrity: sha512-NwV7x2QCxYiCqkHmqV1SBdppyYm1szUf62Lywy9SI0EernqWszbtDNiyoqh6XuWmx/LMUcuVMr3/vG0WKBjdKA==}
 
+  '@softarc/native-federation-runtime@4.0.0-RC8':
+    resolution: {integrity: sha512-mCBA8IfBZH2Q0Tl4qtKt9gII52Co8vApCCv+h0oLW+DSP1ZFDyO0409FL+byurDJp3t9L42LQg9J0PeMNJKknw==}
+
   '@softarc/native-federation@4.0.0-RC6':
     resolution: {integrity: sha512-JVitS9pPkDVdI6t6XhhbtkEFNHw4UvjTiVokTNMvHxA/O+IbSBf/+/HwgX34x2lphC5q3O0jzzlu4+HFPKLxug==}
+
+  '@softarc/native-federation@4.0.0-RC8':
+    resolution: {integrity: sha512-AkBb9mOfW/m0bMIZ9T2cNbQdgfWTz3zkQWb0IdYYDI9hZiXrRISzZCMDP+dO1irTogDpDAdb1Z3pbuoW6JccbA==}
 
   '@softarc/sheriff-core@0.19.6':
     resolution: {integrity: sha512-KACxHG9sS7kNWgnnBODzdr14kMLMrJVlQKc+tViUP03p2fRwNhESOA49bz51Yn7dro1mbtMmmFjICLmZSJDZZA==}
@@ -6996,7 +7002,23 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
+  '@softarc/native-federation-runtime@4.0.0-RC8(typescript@5.9.3)':
+    dependencies:
+      '@softarc/native-federation': 4.0.0-RC8(typescript@5.9.3)
+    transitivePeerDependencies:
+      - typescript
+
   '@softarc/native-federation@4.0.0-RC6(typescript@5.9.3)':
+    dependencies:
+      '@softarc/sheriff-core': 0.19.6(typescript@5.9.3)
+      chalk: 5.6.2
+      esbuild: 0.27.3
+      fast-glob: 3.3.3
+      json5: 2.2.3
+    transitivePeerDependencies:
+      - typescript
+
+  '@softarc/native-federation@4.0.0-RC8(typescript@5.9.3)':
     dependencies:
       '@softarc/sheriff-core': 0.19.6(typescript@5.9.3)
       chalk: 5.6.2
