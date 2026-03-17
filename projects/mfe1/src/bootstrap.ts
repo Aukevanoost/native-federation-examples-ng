@@ -1,13 +1,13 @@
 import { createApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
-import { createCustomElement } from "@angular/elements";
+import { createCustomElement } from '@angular/elements';
 
 (() => {
-  createApplication(appConfig).then(({injector}) => {
+  createApplication(appConfig).then(({ injector }) => {
     customElements.define(
       'app-mfe1',
-      createCustomElement(AppComponent, {injector})
-    )
-  })
+      createCustomElement(AppComponent, { injector }),
+    );
+  });
 })();
