@@ -10,18 +10,27 @@ export default withNativeFederation({
   },
 
   shared: {
-    ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
-  },
+    ...shareAll(
+      { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package' },
+      {
+        overrides: {
+          '@angular/core': { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package', chunks: true, includeSecondaries: {keepAll: true}},
+          '@angular/common': { singleton: true, strictVersion: true, requiredVersion: 'auto',build: 'package', chunks: true, includeSecondaries: {keepAll: true}},
 
+        }
+      }
+    ),
+  },
+  chunks: false,
   skip: [
-    'rxjs/ajax',
+    'rxjs/ajax', 
     'rxjs/fetch',
     'rxjs/testing',
     'rxjs/webSocket',
     // Add further packages you don't need at runtime
-  ]
+  ],
 
-  // Please read our FAQ about sharing libs:
-  // https://shorturl.at/jmzH0
-  
+  features: { 
+    denseChunking: true
+  }
 });

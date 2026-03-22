@@ -33,7 +33,6 @@
 					"options": {
 						"target": "mfe4:serve-original:development",
 						"rebuildDelay": 0,
-						"chunks": { "enable": true, "dense": true },
 						"dev": true,
 						"port": 0
 					}

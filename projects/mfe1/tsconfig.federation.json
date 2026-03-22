@@ -8,6 +8,7 @@
     "src/bootstrap.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "../../libs/internal/src/logging/index.ts"
   ]
 }
