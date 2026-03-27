@@ -8,7 +8,7 @@ import { ConsoleLoggerService } from '@internal/logging';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = signal('mfe1');
+  title = signal('mfe1-test6');
 
   constructor(private readonly logger: ConsoleLoggerService) {
     this.logger.log('Hello from mfe1 via internal library service');

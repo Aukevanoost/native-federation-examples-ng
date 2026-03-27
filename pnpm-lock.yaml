@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@softarc/native-federation@4.0.0-RC8': '@softarc/native-federation@4.0.0-RC9'
-
 importers:
 
   .:
@@ -52,7 +49,7 @@ importers:
         version: 0.15.1
     devDependencies:
       '@angular-architects/native-federation-v4':
-        specifier: ~21.1.8
+        specifier: 21.1.8
         version: 21.1.8(9852c98983fd710edeb0929019ab9491)
       '@angular-devkit/build-angular':
         specifier: ^21.2.0
@@ -70,8 +67,8 @@ importers:
         specifier: 4.0.0-RC9
         version: 4.0.0-RC9(typescript@5.9.3)
       '@softarc/native-federation-orchestrator':
-        specifier: 4.0.0-RC4
-        version: 4.0.0-RC4
+        specifier: 4.0.0
+        version: 4.0.0
       '@softarc/native-federation-runtime':
         specifier: 4.0.0-RC9
         version: 4.0.0-RC9(typescript@5.9.3)
@@ -2307,8 +2304,8 @@ packages:
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
 
-  '@softarc/native-federation-orchestrator@4.0.0-RC4':
-    resolution: {integrity: sha512-127S2rwAmjmhl1eY5jo45QKtvn0GnQ7Swwb3QPNyseNRbrvwArTGKIvPvQGlOlpz7HqM4x/us58C4ruVdCAAcg==}
+  '@softarc/native-federation-orchestrator@4.0.0':
+    resolution: {integrity: sha512-mPYswVzOf7/hSfsxFo1ZkRT9mKJro31bqaoSO6bP3GZTB3AsML/aoX/m+S59ocsEI12z4P7N2w2JI0zeRkmLmw==}
 
   '@softarc/native-federation-runtime@4.0.0-RC9':
     resolution: {integrity: sha512-fXYHrnRSYXtqjXUmAlONrqfEh3PxHeGaHx0MN6ir0YpYJ1EXYhPCLs41UBavHm9BPUEpd+ioFQnkPmajPBU6Nw==}
@@ -7236,7 +7233,7 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.2': {}
 
-  '@softarc/native-federation-orchestrator@4.0.0-RC4':
+  '@softarc/native-federation-orchestrator@4.0.0':
     dependencies:
       semver: 7.7.4
 

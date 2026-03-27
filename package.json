@@ -7,7 +7,7 @@
     "start:all": "concurrently \"ng serve mfe1\" \"ng serve mfe2\" \"ng serve mfe3\" \"ng serve vnf-host\"",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "watch": "ng build mfe1 --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
@@ -27,10 +27,10 @@
     "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-architects/native-federation-v4": "~21.1.8",
+    "@angular-architects/native-federation-v4": "21.1.8",
     "@softarc/native-federation": "4.0.0-RC9",
     "@softarc/native-federation-runtime": "4.0.0-RC9",
-    "@softarc/native-federation-orchestrator": "4.0.0-RC4",
+    "@softarc/native-federation-orchestrator": "4.0.0",
     "@angular-devkit/build-angular": "^21.2.0",
     "@angular/build": "^21.2.0",
     "@angular/cli": "^21.2.0",
