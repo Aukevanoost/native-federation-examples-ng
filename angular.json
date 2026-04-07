@@ -140,7 +140,7 @@
 				"build": {
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
-                        "cacheExternalArtifacts": false
+                        "cacheExternalArtifacts": true
                     },
 					"configurations": {
 						"production": {
