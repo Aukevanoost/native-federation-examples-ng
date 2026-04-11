@@ -17,6 +17,7 @@
 				"build": {
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
+            			"tsConfig": "projects/mfe1/tsconfig.federation.json",
                         "cacheExternalArtifacts": true
                     },
 					"configurations": {
@@ -34,6 +35,7 @@
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
 						"target": "mfe1:serve-original:development",
+            			"tsConfig": "projects/mfe1/tsconfig.federation.json",
 						"cacheExternalArtifacts": true,
 						"rebuildDelay": 0,
 						"dev": true,
@@ -44,22 +46,9 @@
 					"builder": "@angular/build:extract-i18n"
 				},
 				"test": {
-					"builder": "@angular/build:karma",
+					"builder": "@angular/build:unit-test",
 					"options": {
-						"polyfills": [
-						],
-						"tsConfig": "projects/mfe1/tsconfig.spec.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							{
-								"glob": "**/*",
-								"input": "projects/mfe1/public"
-							}
-						],
-						"styles": [
-							"projects/mfe1/src/styles.scss"
-						],
-						"scripts": []
+						"buildTarget": "mfe1:esbuild:development"
 					}
 				},
 				"esbuild": {
@@ -140,6 +129,7 @@
 				"build": {
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
+            			"tsConfig": "projects/mfe2/tsconfig.federation.json",
                         "cacheExternalArtifacts": true
                     },
 					"configurations": {
@@ -157,6 +147,7 @@
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
 						"target": "mfe2:serve-original:development",
+            			"tsConfig": "projects/mfe2/tsconfig.federation.json",
 						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
@@ -387,6 +378,7 @@
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
                         "cacheExternalArtifacts": false,
+            			"tsConfig": "projects/vnf-host/tsconfig.federation.json",
 						"entryPoints": ["projects/vnf-host/src/main.ts"]
                     },
 					"configurations": {
@@ -404,6 +396,7 @@
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
 						"target": "vnf-host:serve-original:development",
+            			"tsConfig": "projects/vnf-host/tsconfig.federation.json",
 						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
@@ -510,7 +503,8 @@
 				"build": {
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
-                        "cacheExternalArtifacts": false
+             			"tsConfig": "projects/mfe3/tsconfig.federation.json",
+                       "cacheExternalArtifacts": false
                     },
 					"configurations": {
 						"production": {
@@ -527,6 +521,7 @@
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
 						"target": "mfe3:serve-original:development",
+            			"tsConfig": "projects/mfe3/tsconfig.federation.json",
 						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,

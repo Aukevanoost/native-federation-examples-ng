@@ -9,6 +9,7 @@ export default withNativeFederation({
     './Bootstrap': './projects/mfe4/src/bootstrap.ts',
   },
 
+  shareScope: "ng21",
   shared: {
     ...shareAll(
       { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package' },

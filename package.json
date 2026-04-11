@@ -32,7 +32,7 @@
     }
   },
   "devDependencies": {
-    "@angular-architects/native-federation-v4": "21.1.11",
+    "@angular-architects/native-federation-v4": "21.1.12",
     "@softarc/native-federation": "4.0.0-RC10",
     "@softarc/native-federation-runtime": "4.0.0-RC10",
     "@softarc/native-federation-orchestrator": "4.0.0",

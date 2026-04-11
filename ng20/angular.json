@@ -19,6 +19,7 @@
 					"options": {},
 					"configurations": {
 						"production": {
+							"tsConfig": "projects/mfe4/tsconfig.app.json",
 							"target": "mfe4:esbuild:production"
 						},
 						"development": {
@@ -32,6 +33,7 @@
 					"builder": "@angular-architects/native-federation-v4:build",
 					"options": {
 						"target": "mfe4:serve-original:development",
+						"tsConfig": "projects/mfe4/tsconfig.app.json",
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
