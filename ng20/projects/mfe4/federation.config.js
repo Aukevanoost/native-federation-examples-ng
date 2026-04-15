@@ -9,20 +9,19 @@ export default withNativeFederation({
     './Bootstrap': './projects/mfe4/src/bootstrap.ts',
   },
 
-  shareScope: "ng21",
+  // Ensures scoping of all dependencies on different "ng20" scope. 
+  shareScope: "ng20",
   shared: {
     ...shareAll(
       { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package' },
       {
         overrides: {
-          '@angular/core': { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package', chunks: true, includeSecondaries: {keepAll: true}},
-          '@angular/common': { singleton: true, strictVersion: true, requiredVersion: 'auto',build: 'package', chunks: true, includeSecondaries: {keepAll: true}},
+          '@angular/core': { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package',  includeSecondaries: {keepAll: true}},
 
         }
       }
     ),
   },
-  chunks: false,
   skip: [
     'rxjs/ajax', 
     'rxjs/fetch',
@@ -32,6 +31,7 @@ export default withNativeFederation({
   ],
 
   features: { 
+    ignoreUnusedDeps: true, // by default now
     denseChunking: true
   }
 });

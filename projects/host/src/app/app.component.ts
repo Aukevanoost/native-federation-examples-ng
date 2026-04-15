@@ -24,5 +24,5 @@ export class AppComponent {
   showMfe4() {
     this.router.navigate(['/mfe4']);
   }
-  title = 'vnf-host';
+  title = 'host';
 }

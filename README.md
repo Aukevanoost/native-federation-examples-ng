@@ -11,7 +11,7 @@ Native Federation is a framework-agnostic implementation of the Module Federatio
 
 This workspace contains multiple micro-frontends:
 
-- **nf-host** / **vnf-host** - Host applications that load remote micro-frontends
+- **host** - Host applications that load remote micro-frontends
 - **mfe1**, **mfe2**, **mfe3** - Remote micro-frontend applications
 - **ng20/** - A separate Angular 20 workspace with `mfe4` to demonstrate cross-version compatibility
 

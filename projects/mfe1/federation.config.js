@@ -12,14 +12,13 @@ export default withNativeFederation({
       { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package' },
       {
         overrides: {
-          '@angular/core': { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package', chunks: true, includeSecondaries: {keepAll: true}},
-          '@angular/common': { singleton: true, strictVersion: true, requiredVersion: 'auto',build: 'package', chunks: true, includeSecondaries: {keepAll: true}},
+          // the includeSecondaries is an opt-out of 'ignoreUnusedDeps' So all of @angular/core is shared to prevent mismatches
+          '@angular/core': { singleton: true, strictVersion: true, requiredVersion: 'auto', build: 'package',  includeSecondaries: {keepAll: true}},
 
         }
       }
     ),
   },
-
   skip: [
     'rxjs/ajax', 
     'rxjs/fetch',
@@ -29,6 +28,7 @@ export default withNativeFederation({
   ],
 
   features: { 
+    ignoreUnusedDeps: true, // by default now
     denseChunking: true
   }
 });

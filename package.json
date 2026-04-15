@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "ng": "ng",
-    "start:all": "concurrently \"ng serve mfe1\" \"ng serve mfe2\" \"ng serve mfe3\" \"ng serve vnf-host\"",
+    "start:all": "concurrently \"ng serve mfe1\" \"ng serve mfe2\" \"ng serve mfe3\" \"ng serve host\"",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build mfe1 --watch --configuration development",
