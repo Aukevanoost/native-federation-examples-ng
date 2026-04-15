@@ -27,7 +27,6 @@
     "@angular-architects/native-federation": "^20.3.0",
     "@softarc/native-federation": "^3.5.2",
     "@softarc/native-federation-runtime": "^3.5.2",
-    "vanilla-native-federation": "^1.1.0",
     "@angular/build": "^20.3.0",
     "@angular-devkit/build-angular": "^20.3.0",
     "@angular/cli": "^20.3.0",
