@@ -16,9 +16,7 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {
-                        "cacheExternalArtifacts": false
-                    },
+					"options": {},
 					"configurations": {
 						"production": {
 							"target": "mfe1:esbuild:production"
@@ -34,7 +32,6 @@
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
 						"target": "mfe1:serve-original:development",
-						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -47,6 +44,8 @@
 					"builder": "@angular/build:karma",
 					"options": {
 						"polyfills": [
+							"zone.js",
+							"zone.js/testing"
 						],
 						"tsConfig": "projects/mfe1/tsconfig.spec.json",
 						"inlineStyleLanguage": "scss",
@@ -66,10 +65,10 @@
 					"builder": "@angular/build:application",
 					"options": {
 						"outputPath": "dist/mfe1",
-						"verbose": true,
 						"index": "projects/mfe1/src/index.html",
 						"browser": "projects/mfe1/src/main.ts",
 						"polyfills": [
+							"zone.js",
 							"es-module-shims"
 						],
 						"tsConfig": "projects/mfe1/tsconfig.app.json",
@@ -139,9 +138,7 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {
-                        "cacheExternalArtifacts": false
-                    },
+					"options": {},
 					"configurations": {
 						"production": {
 							"target": "mfe2:esbuild:production"
@@ -157,7 +154,6 @@
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
 						"target": "mfe2:serve-original:development",
-						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -170,6 +166,8 @@
 					"builder": "@angular/build:karma",
 					"options": {
 						"polyfills": [
+							"zone.js",
+							"zone.js/testing"
 						],
 						"tsConfig": "projects/mfe2/tsconfig.spec.json",
 						"inlineStyleLanguage": "scss",
@@ -189,10 +187,10 @@
 					"builder": "@angular/build:application",
 					"options": {
 						"outputPath": "dist/mfe2",
-						"verbose": false,
 						"index": "projects/mfe2/src/index.html",
 						"browser": "projects/mfe2/src/main.ts",
 						"polyfills": [
+							"zone.js",
 							"es-module-shims"
 						],
 						"tsConfig": "projects/mfe2/tsconfig.app.json",
@@ -249,28 +247,26 @@
 				}
 			}
 		},
-		"nf-host": {
+		"host": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
 					"style": "scss"
 				}
 			},
-			"root": "projects/nf-host",
-			"sourceRoot": "projects/nf-host/src",
+			"root": "projects/host",
+			"sourceRoot": "projects/host/src",
 			"prefix": "app",
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {
-                        "cacheExternalArtifacts": false
-                    },
+					"options": {},
 					"configurations": {
 						"production": {
-							"target": "nf-host:esbuild:production"
+							"target": "host:esbuild:production"
 						},
 						"development": {
-							"target": "nf-host:esbuild:development",
+							"target": "host:esbuild:development",
 							"dev": true
 						}
 					},
@@ -279,8 +275,7 @@
 				"serve": {
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
-						"target": "nf-host:serve-original:development",
-						"cacheExternalArtifacts": false,
+						"target": "host:serve-original:development",
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -293,17 +288,19 @@
 					"builder": "@angular/build:karma",
 					"options": {
 						"polyfills": [
+							"zone.js",
+							"zone.js/testing"
 						],
-						"tsConfig": "projects/nf-host/tsconfig.spec.json",
+						"tsConfig": "projects/host/tsconfig.spec.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "projects/nf-host/public"
+								"input": "projects/host/public"
 							}
 						],
 						"styles": [
-							"projects/nf-host/src/styles.scss"
+							"projects/host/src/styles.scss"
 						],
 						"scripts": []
 					}
@@ -311,23 +308,23 @@
 				"esbuild": {
 					"builder": "@angular/build:application",
 					"options": {
-						"outputPath": "dist/nf-host",
-						"verbose": false,
-						"index": "projects/nf-host/src/index.html",
-						"browser": "projects/nf-host/src/main.ts",
+						"outputPath": "dist/host",
+						"index": "projects/host/src/index.html",
+						"browser": "projects/host/src/main.ts",
 						"polyfills": [
+							"zone.js",
 							"es-module-shims"
 						],
-						"tsConfig": "projects/nf-host/tsconfig.app.json",
+						"tsConfig": "projects/host/tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
 							{
 								"glob": "**/*",
-								"input": "projects/nf-host/public"
+								"input": "projects/host/public"
 							}
 						],
 						"styles": [
-							"projects/nf-host/src/styles.scss"
+							"projects/host/src/styles.scss"
 						],
 						"scripts": []
 					},
@@ -359,133 +356,10 @@
 					"builder": "@angular/build:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "nf-host:esbuild:production"
+							"buildTarget": "host:esbuild:production"
 						},
 						"development": {
-							"buildTarget": "nf-host:esbuild:development"
-						}
-					},
-					"defaultConfiguration": "development",
-					"options": {
-						"port": 4200
-					}
-				}
-			}
-		},
-		"vnf-host": {
-			"projectType": "application",
-			"schematics": {
-				"@schematics/angular:component": {
-					"style": "scss"
-				}
-			},
-			"root": "projects/vnf-host",
-			"sourceRoot": "projects/vnf-host/src",
-			"prefix": "app",
-			"architect": {
-				"build": {
-					"builder": "@angular-architects/native-federation:build",
-					"options": {
-                        "cacheExternalArtifacts": false
-                    },
-					"configurations": {
-						"production": {
-							"target": "vnf-host:esbuild:production"
-						},
-						"development": {
-							"target": "vnf-host:esbuild:development",
-							"dev": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve": {
-					"builder": "@angular-architects/native-federation:build",
-					"options": {
-						"target": "vnf-host:serve-original:development",
-						"cacheExternalArtifacts": false,
-						"rebuildDelay": 0,
-						"dev": true,
-						"port": 0
-					}
-				},
-				"extract-i18n": {
-					"builder": "@angular/build:extract-i18n"
-				},
-				"test": {
-					"builder": "@angular/build:karma",
-					"options": {
-						"polyfills": [
-						],
-						"tsConfig": "projects/vnf-host/tsconfig.spec.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							{
-								"glob": "**/*",
-								"input": "projects/vnf-host/public"
-							}
-						],
-						"styles": [
-							"projects/vnf-host/src/styles.scss"
-						],
-						"scripts": []
-					}
-				},
-				"esbuild": {
-					"builder": "@angular/build:application",
-					"options": {
-						"outputPath": "dist/vnf-host",
-						"verbose": false,
-						"index": "projects/vnf-host/src/index.html",
-						"browser": "projects/vnf-host/src/main.ts",
-						"polyfills": [
-							"es-module-shims"
-						],
-						"tsConfig": "projects/vnf-host/tsconfig.app.json",
-						"inlineStyleLanguage": "scss",
-						"assets": [
-							{
-								"glob": "**/*",
-								"input": "projects/vnf-host/public"
-							}
-						],
-						"styles": [
-							"projects/vnf-host/src/styles.scss"
-						],
-						"scripts": []
-					},
-					"configurations": {
-						"production": {
-							"budgets": [
-								{
-									"type": "initial",
-									"maximumWarning": "500kB",
-									"maximumError": "1MB"
-								},
-								{
-									"type": "anyComponentStyle",
-									"maximumWarning": "4kB",
-									"maximumError": "8kB"
-								}
-							],
-							"outputHashing": "all"
-						},
-						"development": {
-							"optimization": false,
-							"extractLicenses": false,
-							"sourceMap": true
-						}
-					},
-					"defaultConfiguration": "production"
-				},
-				"serve-original": {
-					"builder": "@angular/build:dev-server",
-					"configurations": {
-						"production": {
-							"buildTarget": "vnf-host:esbuild:production"
-						},
-						"development": {
-							"buildTarget": "vnf-host:esbuild:development"
+							"buildTarget": "host:esbuild:development"
 						}
 					},
 					"defaultConfiguration": "development",
@@ -508,9 +382,7 @@
 			"architect": {
 				"build": {
 					"builder": "@angular-architects/native-federation:build",
-					"options": {
-                        "cacheExternalArtifacts": false
-                    },
+					"options": {},
 					"configurations": {
 						"production": {
 							"target": "mfe3:esbuild:production"
@@ -526,7 +398,6 @@
 					"builder": "@angular-architects/native-federation:build",
 					"options": {
 						"target": "mfe3:serve-original:development",
-						"cacheExternalArtifacts": false,
 						"rebuildDelay": 0,
 						"dev": true,
 						"port": 0
@@ -539,6 +410,8 @@
 					"builder": "@angular/build:karma",
 					"options": {
 						"polyfills": [
+							"zone.js",
+							"zone.js/testing"
 						],
 						"tsConfig": "projects/mfe3/tsconfig.spec.json",
 						"inlineStyleLanguage": "scss",
@@ -558,10 +431,10 @@
 					"builder": "@angular/build:application",
 					"options": {
 						"outputPath": "dist/mfe3",
-						"verbose": false,
 						"index": "projects/mfe3/src/index.html",
 						"browser": "projects/mfe3/src/main.ts",
 						"polyfills": [
+							"zone.js",
 							"es-module-shims"
 						],
 						"tsConfig": "projects/mfe3/tsconfig.app.json",
